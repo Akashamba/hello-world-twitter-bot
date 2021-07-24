@@ -28,7 +28,4 @@ async function main() {
 
 console.log("Starting the bot");
 
-cron.schedule("0 10 * * * *", () => {
-    main();
-    // console.log("hello")
-})
+cron.schedule("0 20 * * * *", () => main());
